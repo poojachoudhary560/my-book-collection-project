@@ -6,11 +6,26 @@ class App extends Component {
   state = {
     books
   };
+  getBooksByGenre() {
+    return Object.entries(
+      this.state.books.reduce((booksList, book) => {
+        const { genre } = book;
+
+        booksList[genre] = booksList[genre]
+          ? [...booksList[genre], book]
+          : [book];
+
+        return booksList;
+      }, {})
+    );
+  }
   render() {
+    const books = this.getBooksByGenre();
+
     return (
       <Fragment>
         <Header />
-        <Exercises />
+        <Exercises books={books} />
         <Footer genres={genres} />
       </Fragment>
     );

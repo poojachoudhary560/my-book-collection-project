@@ -48,5 +48,33 @@ export const books = [
     description: "stupid book",
     genre: "romance",
     author: "Chetan Bhagat"
+  },
+  {
+    id: "5-point-someone",
+    title: "5 Point Someone",
+    description: "stupid book",
+    genre: "romance",
+    author: "Chetan Bhagat"
+  },
+  {
+    id: "revolution-2020",
+    title: "Revolution 2020",
+    description: "stupid book",
+    genre: "romance",
+    author: "Chetan Bhagat"
+  },
+  {
+    id: "nd1",
+    title: "ND 1",
+    description: "stupid book",
+    genre: "mystery",
+    author: "Nancy Drew"
+  },
+  {
+    id: "nd2",
+    title: "ND 2",
+    description: "stupid book",
+    genre: "mystery",
+    author: "Nancy Drew"
   }
 ];
